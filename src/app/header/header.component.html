@@ -1,0 +1,78 @@
+<!-- Header Area wrapper Starts -->
+<header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+          </button>
+          <a routerLink="/home" class="navbar-brand"><img src="../../assets/img/logo.png" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item " [class.active]="activetab==='home'">
+              <a class="nav-link" routerLink="/home" (click)="getActivetab('home')">
+                Home
+              </a>
+            </li>
+            <li class="nav-item" [class.active]="activetab==='about'">
+              <a class="nav-link" routerLink="/about" (click)="getActivetab('about')">
+                About
+              </a>
+            </li>
+            <li class="nav-item" [class.active]="activetab==='services'">
+              <a class="nav-link" routerLink="/services" (click)="getActivetab('services')">
+                Services
+              </a>
+            </li>
+            <li class="nav-item" [class.active]="activetab==='resume'">
+              <a class="nav-link" routerLink="/resume" (click)="getActivetab('resume')">
+                Resume
+              </a>
+            </li>
+            <li class="nav-item" [class.active]="activetab==='portfolio'">
+              <a class="nav-link" routerLink="/portfolio" (click)="getActivetab('portfolio')">
+                Work
+              </a>
+            </li>
+            <li class="nav-item" [class.active]="activetab==='contact'">
+              <a class="nav-link" routerLink="/contact" (click)="getActivetab('contact')">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Start -->
+      <ul class="onepage-nev mobile-menu">
+        <li>
+          <a routerLink="/home">Home</a>
+        </li>
+        <li>
+          <a routerLink="/about">about</a>
+        </li>
+        <li>
+          <a routerLink="/services">Services</a>
+        </li>
+        <li>
+          <a routerLink="/resume">resume</a>
+        </li>
+        <li>
+          <a routerLink="/portfolio">Work</a>
+        </li>
+        <li>
+          <a routerLink="/contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
+  </header>
+  <!-- Header Area wrapper End -->
+
